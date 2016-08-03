@@ -5,13 +5,12 @@
 
 using namespace Rcpp;
 
-// rcpp_hello_world
-List rcpp_hello_world();
-RcppExport SEXP MELD_rcpp_hello_world() {
+// cppTest
+void cppTest();
+RcppExport SEXP MELD_cppTest() {
 BEGIN_RCPP
-    Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
-    __result = Rcpp::wrap(rcpp_hello_world());
-    return __result;
+    cppTest();
+    return R_NilValue;
 END_RCPP
 }

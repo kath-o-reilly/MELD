@@ -8,4 +8,7 @@
 
 dummy1 <- function() {
 	print('dummy1')
+    
+    cppTest()
+    
 }
